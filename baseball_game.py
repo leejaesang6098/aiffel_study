@@ -34,7 +34,7 @@ while len(computer_point) < 3:
     if x not in computer_point:
         computer_point.append(x)
 
-print("0과 9사이의 서로 다른 숫자 3개를 랜덤한 순서로 뽑았습니다.")
+print("0에서 9까지의 서로 다른 숫자 3개를 랜덤한 순서로 뽑았습니다.")
 game_count = 1
 
 while True:
