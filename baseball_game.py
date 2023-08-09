@@ -6,7 +6,7 @@ def game_go():
 
     while len(user_point) < 3:
         user_input = int(input("{}번째 숫자를 입력하세요: ".format(x)))
-        if user_input not in user_point and user_input <= 9:
+        if user_input not in user_point and 0 <= user_input <= 9:
             user_point.append(user_input)
             x += 1
         else:
