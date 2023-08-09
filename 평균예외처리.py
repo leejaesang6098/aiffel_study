@@ -1,16 +1,21 @@
-# This is a sample Python script.
+def aver():
+    total = 0
+    count = 0
+    nums = input('Enter a number: (input "q" to quit) ')
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+    while nums != "q":
+        try:
+            x = float(nums)
+            total += x
+            count += 1
+        except ValueError:
+            print('Not a number! please input just number')
+
+        nums = input('Enter a number: (input "q" to quit) ')
+
+    avg = total / count
+
+    return print(f'\n average: {avg}')
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+aver()
