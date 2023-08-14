@@ -4,8 +4,7 @@ def numbers():
         number = input("Enter a number ('q' key to quit): ")
         while number != "q":
             try:
-                x = float(number)
-                arr.append(x)
+                arr.append(float(number))
             except ValueError:
                 print("Not a number please input number")
             number = input("Enter a number ('q' key to quit): ")
@@ -46,9 +45,8 @@ print("mean: ", avg)
 
 def median(nums):
     nums.sort()
-    x = len(nums) // 2
     if len(nums) % 2:
-        return nums[x]
+        return nums[len(nums) // 2]
     else:
         return (nums[len(nums) // 2] + nums[(len(nums) // 2) - 1]) / 2
 
