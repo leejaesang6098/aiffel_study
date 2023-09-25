@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\0925~dataton\sample_submission.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
